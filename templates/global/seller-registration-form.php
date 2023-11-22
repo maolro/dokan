@@ -47,10 +47,6 @@
     do_action( 'dokan_seller_registration_after_shopurl_field', [] );
     ?>
 
-    <p class="form-row form-group form-row-wide">
-        <label for="shop-phone"><?php esc_html_e( 'Phone Number', 'dokan-lite' ); ?><span class="required">*</span></label>
-        <input type="text" class="input-text form-control" name="phone" id="shop-phone" value="<?php echo ! empty( $data['phone'] ) ? esc_attr( $data['phone'] ) : ''; ?>" required="required" />
-    </p>
 
     <?php
     $show_terms_condition = dokan_get_option( 'enable_tc_on_reg', 'dokan_general' );
